@@ -1,0 +1,13 @@
+<mat-divider></mat-divider>
+<mat-card class="review-card">
+  <mat-card-header>
+    <div class="flex-container">
+      <mat-icon class="icon" (click)="edit()">edit</mat-icon>
+      <mat-icon class="icon" (click)="delete()">delete</mat-icon>
+    </div>
+
+    <div mat-card-avatar class="review-card-header-image" [ngStyle]="{'background-image': 'url(' + review.image + ')','background-size': 'cover'}" ></div>
+    <mat-card-title>{{review.name}}</mat-card-title>
+    <mat-card-subtitle>{{review.comment}}</mat-card-subtitle>
+  </mat-card-header>
+</mat-card>
